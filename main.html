@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF_8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Musicworld - Home of Music</title>
+
+        <link rel="stylesheet" href="main.css">
+
+        <!--bootsrap cdn-->
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+        <!--fontawesome cdn-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+        <!--slick-->
+        
+    </head>
+    
+        <!--header-->
+        
+    <header>
+        <div class="container">
+            
+                <div class="btn-group">
+                    <span class="fas fa-bars"></span>
+                </div>    
+                    <nav class="sidebar">
+                        <div class="text">Side Bar</div>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                            <li><a href="#"><i class="fab fa-hotjar"></i> Top Songs</a></li>
+                            <li><a href="#"><i class="fas fa-headphones"></i> Top Albums</a></li>
+                            <li><a href="#"><i class="fas fa-stream"></i> Playlists</a></li>
+                            <li><a href="#"><i class="fas fa-user-circle"></i> Accounts to Follow</a></li>
+                            <li><a href="#" class="feat-btn"><i class="fas fa-book-medical"></i> Library</a></li>
+                            <li><a href="#" class="feat-btn"><i class="fas fa-book-medical"></i> Feed</a></li>
+                        </ul>
+                    
+                    </nav>
+                    
+            
+             
+            <div class="brand">
+                <div class="brand my-md-3 site-title " id="navbar__logo"><i class="fas fa-globe-americas"></i>Musicworld</div>
+            </div>
+            
+            <div class="searchbox">
+                <label for="search"><h2>Search:</h2></label>
+                <input type="search" id="search" placeholder="Search for Artists, Songs, Albums!" name="search"required>
+                <input id="go" type="submit" name="submit" value="Go!">
+            </div>
+
+            
+            <ul id="navtext">
+                <li><a href="#">Premium</a></li>
+                <li><a data-modal-target="#modal" id="up">Sign up</a></li>
+                <li><a data-modal-target="#modal" id="up">Sign in</a></li>
+            </ul>
+
+            <div class="upload">
+            <li><a href="#" class="loginbtn"><i class="fa fa-upload" aria-hidden="true"></i> Upload</a></li>
+            </div>
+        </div>
+    </header>
+        <!--/header--> 
+--> 
+    <body>  
+        <!--main section-->
+        
+        <main>
+
+            <div class="modal active" id="modal">
+                <div class="form-box">
+                    <p class="logo" id="popup__logo"><i class="fas fa-globe-americas"></i>Musicworld</p><br>
+                    <div class="modal-header">
+                        <div class="title">Sign In</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+
+                    <div class="button-box">
+                        <div class="box"></div>
+                        <button type="button" onclick="login()" class="toggle-btn">Log In</button>
+                        <button type="button" onclick="register()" class="toggle-btn">Register</button>
+                    </div>
+
+                    <form id="login" class="group-login">
+                            <input type="email" class="input-field" placeholder="Email id"required>
+                            <input type="password" class="input-field" placeholder="Enter Password"required>
+                            <input type="checkbox" class="check-box"><span>Remember Password</span>
+                            <button type="submit" class="submit-btn">Log in</button>
+                    </form>
+
+                    <form id="register" class="group-register">
+                        <input type="text"class="input-field" placeholder="Name"required>
+                        <input type="email" class="input-field" placeholder="Email id" required>
+                        <input type="password" class="input-field" placeholder="Enter Password"required>
+                        <input type="password" class="input-field" placeholder="Confirm Password"required>
+                        <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                        <button type="submit" class="submit-btn">Register</button>
+                    </form>
+                </div>
+            </div>
+            <div class="active" id="overlay"></div>
+
+            <div id="shop-text" style="width:100%; height:90%; overflow:hidden;">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3c3bd85e-3a2d-412d-8791-509b8e76b7a8/d5ppvhl-ccdd44f0-10fd-479a-95d9-6adbac297604.jpg/v1/fill/w_900,h_675,q_75,strp/music_website_background_image_by_cooluani_d5ppvhl-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNjM2JkODVlLTNhMmQtNDEyZC04NzkxLTUwOWI4ZTc2YjdhOFwvZDVwcHZobC1jY2RkNDRmMC0xMGZkLTQ3OWEtOTVkOS02YWRiYWMyOTc2MDQuanBnIiwiaGVpZ2h0IjoiPD02NzUiLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLndhdGVybWFyayJdLCJ3bWsiOnsicGF0aCI6Ilwvd21cLzNjM2JkODVlLTNhMmQtNDEyZC04NzkxLTUwOWI4ZTc2YjdhOFwvY29vbHVhbmktNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.dddpzBcUMRTWftBEjTNIfaMdysq_Px_rVyTYr3T6FCs"  alt="grace-shop" width="100%" />
+            </div>
+            <div class="hd">
+                <b>Feel the musik</b> <i class="fas fa-music"></i>
+            </div>
+            <div class="content">
+                <em><b>Music and rhythm find thier <br>way into the secret places <br>of the soul.</b></em>
+            </div>
+
+            <a href="#" class="join">JOIN NOW</a>
+
+
+            
+        
+        </main>
+        
+        <!--/main section-->
+
+        
+        <script src="./main.js"></script>
+
+        
+
+        <!--footer section-->
+        
+        <footer id="footer">
+            <div class="social__media">
+                <div class="social__media-wrapper">
+                
+                    <p class="logo" id="navbar__logo"><i class="fas fa-globe-americas"></i>Musicworld</p><br>
+                    <p class="website__right">Copyright @ 2021.</p>
+                
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <div class="footer__link-wrapper">
+                    <div class="footer__link-items">
+                        <h2>About Us</h2>
+                        <a href="/">How it works</a>
+                        <a href="/">Careers</a>
+                        <a href="/">Investments</a>
+                        <a href="/">Blog</a>
+                        <a href="/">Privacy policy</a>
+                    </div>
+                </div>
+                <div class="footer__link-wrapper">
+                    <div class="footer__link-items">
+                        <h2>Contact Us</h2>
+                        <a href="/">Contact</a>
+                        <a href="/">Help</a>
+                        <a href="/">Support</a>
+                        <a href="/">Blog</a>
+                        <a href="/">Sponsorships</a>
+                    </div>
+                </div>
+                <div class="footer__link-wrapper">
+                    <div class="footer__link-items">
+                        <h2>Social Media</h2>
+                        <a href="/">Facebook</a>
+                        <a href="/">Instagram</a>
+                        <a href="/">Twitter</a>
+                        <a href="/">Youtube</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="social__icons">
+                <a href="/" class="social__icon-links" target="_blank">
+                <i class="fab fa-facebook"></i>
+                 </a>
+            </div>
+            <div class="social__icons">
+                <a href="/" class="social__icon-links" target="_blank">
+                <i class="fab fa-instagram"></i>
+                 </a>
+            </div>
+            <div class="social__icons">
+                <a href="/" class="social__icon-links" target="_blank">
+                <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="social__icons">
+                <a href="/" class="social__icon-links" target="_blank">
+                <i class="fab fa-youtube"></i>
+                 </a>
+            </div>
+        </footer>
+        <!--/footer section-->
+    </body>
+</html>
