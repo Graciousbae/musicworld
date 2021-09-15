@@ -4,20 +4,227 @@
         <meta charset="UTF_8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Musicworld - Home of Music</title>
+        <title>Musicworld - Music Sharing Home</title>
 
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="css.css">
+
+        <!--bootsrap cdn-->
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+        <!--fontawesome cdn-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
+        <!--slick-->
+        
     </head>
+    
+        <!--header-->
 
-    <body>  
-        <button>Open Modal</button>
-        <div class="modal" id="modal">
-            <div class="modal-header">
+        <header>
+            <div class="container">
+                
+                    <div class="btn-group">
+                        <span class="fas fa-bars"></span>
+                    </div>    
+                        <nav class="sidebar">
+                            <div class="text">Side Bar</div>
+                            <ul>
+                                <li><a href="main.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                                <li><a href=""><i class="fas fa-house-user"></i>Trending</a></li>
+                                <li><a href="#"><i class="fab fa-hotjar"></i> Top Songs</a></li>
+                                <li><a href="#"><i class="fas fa-headphones"></i> Top Albums</a></li>
+                                <li><a href="#"><i class="fas fa-stream"></i> Playlists</a></li>
+                                <li><a href="#"><i class="fas fa-user-circle"></i> Accounts to Follow</a></li>
+                                <li><a href="#" class="feat-btn"><i class="fas fa-book-medical"></i> Library</a></li>
+                                <li><a href="#" class="feat-btn"><i class="fas fa-book-medical"></i> Feed</a></li>
+                            </ul>
+                        
+                        </nav>
+                        
+                
+                 
+                <div class="brand">
+                    <div class="brand my-md-3 site-title " id="navbar__logo"><i class="fas fa-globe-americas"></i>Musicworld</div>
+                </div>
+                
+                <div class="searchbox">
+                    <label for="search"><h2>Search:</h2></label>
+                    <input type="search" id="search" placeholder="Search for Artists, Songs, Albums!" name="search"required>
+                    <input id="go" type="submit" name="submit" value="Go!">
+                </div>
+    
+                
+                <ul id="navtext">
+                    <li><a href="sample.html">Premium</a></li>
+                    <li><a data-modal-target="#modal" id="up"></a></li>
+                    <li><a data-modal-target="#modal" id="up">Sign in</a></li>
+                </ul>
+    
+                <div class="upload">
+                <li><a href="#" class="loginbtn"><i class="fa fa-upload" aria-hidden="true"></i> Upload</a></li>
+                </div>
+            </div>
+        </header>
+            <!--/header--> 
+    <body>
 
+            <div id="img" style="width:100%; height:90%; overflow:hidden;">
+                <img src="https://png.pngtree.com/thumb_back/fh260/back_our/20200630/ourmid/pngtree-extreme-fantasy-colorful-blue-music-festival-business-background-image_342775.jpg" alt="musicworld premium" width="100%" />
             </div>
-            <div class="modal-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque consequuntur vero maiores molestiae rem corrupti harum obcaecati libero voluptates consequatur illo autem, eligendi tempora ea. Culpa voluptate doloribus et adipisci animi a numquam sit aliquid harum eos, necessitatibus aliquam recusandae explicabo obcaecati doloremque accusamus aperiam repellendus cupiditate illo natus iste repellat voluptas aspernatur deleniti? Autem dolor pariatur iste animi quasi! Non nulla fuga quia ut doloremque, eaque facilis deserunt dignissimos expedita rem! Ab pariatur esse non minus doloribus accusamus.
+            <div class="musik">
+                <b>Musicworld <br>Premium</b>
             </div>
+            <div class="world">
+                <b>Enjoy ad-free music listening, offline playback, and more. Support artists to the next level. <br>Cancel anytime.</b>
+            </div>
+            <div id="">
+                <a href="#" id="get">GET 1 MONTH FREE TRIAL</a>
+                <a href="#move" id="view">VIEW PLANS</a>
+            </div>
+        <h1 class="premium"><b>Why go Premium?</b></h1>
+        
+        <div class="why">
+            <a href="" class="icon"><i class="fab fa-playstation"></i></a>
+            <h3>Download playlists.</h3>
+            <p>Listen anywhere.</p>
         </div>
+        <div class="back">
+        <div class="why">
+            <a href="" class="icon"><i class="fas fa-ban"></i></a>
+            <h3>Ad-free music listening.</h3>
+            <p>Enjoy nonstop music.</p>
+        </div>
+        <div class="why">
+            <a href="" class="icon"><i class="far fa-play-circle"></i></a>
+            <h3>Play any song.</h3>
+            <p>Even on mobile.</p>
+        </div>
+        <div class="why">
+            <a href="" class="icon"><i class="fas fa-file-audio"></i></a>
+            <h3>Unlimited skips.</h3>
+            <p id="move">Just hit next.</p>
+        </div>
+        
+    <section id="color your">
+            
+            <div id="your">
+            <h1 id="pick"><b>Pick your Premium</b></h1>
+
+            <div class="div">
+                <button id="butt">1 month free</button>
+                <h4>Student</h4>
+                <p>#300/month <br>1 account </p>
+                <hr>
+                <li>ad supportd plan</li>
+                <li>ad-free music listening</li>
+                <li>Play anywhere - even offline</li>
+                <li>On-demand playback</li>
+                <br><br><br><br><br><br><br><br><br>
+                <a href="#" id="start">GET STARTED</a>
+            </div>
+            <div class="div">
+                <button id="butt">1 month free</button>
+                <h4>Individual</h4>
+                <p>#500/month <br>1 account </p>
+                <hr>
+                <li>ad-free music listening</li>
+                <li>Play anywhere - even offline</li>
+                <li>On-demand playback</li>
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <a href="#" id="start">GET STARTED</a>
+            </div>
+            <div class="div">
+                <button id="butt">7 days free</button>
+                <h4>Duo</h4>
+                <p>#1000/month <br>2 accounts </p>
+                <hr>
+                
+                <li>2 Premium accounts for a couple under one roof</li>
+                <li>Duo Mix: a playlist for two, regularly updated with music you both enjoy</li>
+                <li>ad-free music listening</li>
+                <li>Play anywhere - even offline</li>
+                <li>On-demand playback</li>
+                <a href="#" id="start">GET STARTED</a>
+            </div>
+            <div class="div">
+                <button id="butt">7 days free</button>
+                <h4>Family</h4>
+                <p>#2500/month <br>6 accounts </p>
+                <hr>
+                <li>Premium accounts for family members living under one roof</li>
+                <li>Family Mix: a playlist for your family, regularly updated with music you all enjoy</li>
+                <li>ad-free music listening</li>
+                <li>Play anywhere - even offline</li>
+                <li>On-demand playback</li>
+                <a href="#" id="start">GET STARTED</a>
+            </div>
+        </section>
+        <script src="./main.js"></script>
+
+        <footer id="footer">
+            <div class="social__media">
+                <div class="social__media-wrapper">
+                
+                    <p class="logo" id="navbar__logo"><i class="fas fa-globe-americas"></i>Musicworld</p><br>
+                    <p class="website__right">Copyright @ 2021.</p>
+                
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <div class="footer__link-wrapper">
+                    <div class="footer__link-items">
+                        <h2>About Us</h2>
+                        <a href="/">How it works</a>
+                        <a href="/">Careers</a>
+                        <a href="/">Investments</a>
+                        <a href="/">Blog</a>
+                        <a href="/">Privacy policy</a>
+                    </div>
+                </div>
+                <div class="footer__link-wrapper">
+                    <div class="footer__link-items">
+                        <h2>Contact Us</h2>
+                        <a href="/">Contact</a>
+                        <a href="/">Help</a>
+                        <a href="/">Support</a>
+                        <a href="/">Blog</a>
+                        <a href="/">Sponsorships</a>
+                    </div>
+                </div>
+                <div class="footer__link-wrapper">
+                    <div class="footer__link-items">
+                        <h2>Social Media</h2>
+                        <a href="/">Facebook</a>
+                        <a href="/">Instagram</a>
+                        <a href="/">Twitter</a>
+                        <a href="/">Youtube</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="social__icons">
+                <a href="/" class="social__icon-links" target="_blank">
+                <i class="fab fa-facebook"></i>
+                 </a>
+            </div>
+            <div class="social__icons">
+                <a href="/" class="social__icon-links" target="_blank">
+                <i class="fab fa-instagram"></i>
+                 </a>
+            </div>
+            <div class="social__icons">
+                <a href="/" class="social__icon-links" target="_blank">
+                <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="social__icons">
+                <a href="/" class="social__icon-links" target="_blank">
+                <i class="fab fa-youtube"></i>
+                 </a>
+            </div>
+        </footer>
+        <!--/footer section-->
     </body>
+    </html>
