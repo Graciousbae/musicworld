@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF_8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Musicworld - Music Sharing Home</title>
+
+        <link rel="stylesheet" href="css.css">
+
+        <!--bootsrap cdn-->
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+        <!--fontawesome cdn-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+        <!--slick-->
+        
+    </head>
+    <body>
+        <p class="logo" id="popup__logo"><i class="fas fa-globe-americas"></i>Musicworld</p><br>
+        <div class="form-box">
+            
+            <div class="modal-header">
+                <div class="title">Sign In to continue</div>
+            </div>
+
+            <div class="button-box">
+                <div class="box"></div>
+                <button type="button" onclick="login()" class="toggle-btn">Log In</button>
+                <button style="color: white;" type="button" onclick="register()" class="toggle-btn">Register</button>
+            </div>
+
+            <form id="login" class="group-login">
+                    <input type="email" class="input-field" placeholder="Email id"required>
+                    <input type="password" class="input-field" placeholder="Enter Password"required>
+                    <input type="checkbox" class="check-box">
+                    <span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Log in</button>
+            </form>
+
+            <form id="register" class="group-register">
+                <input type="text"class="input-field" placeholder="Name"required>
+                <input type="email" class="input-field" placeholder="Email id" required>
+                <input type="password" class="input-field" placeholder="Enter Password"required>
+                <input type="password" class="input-field" placeholder="Confirm Password"required>
+                <input type="checkbox" class="check-box"><br><br>
+                <span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+
+        <script src="./main.js"></script>
+
+    </body>
+</html>

@@ -112,7 +112,7 @@ nav ul li a:hover {
 
 header .searchbox {
     top: 25px;
-    left: 330px;
+    left: 350px;
     position: fixed;
     display: flex;
     margin: auto 0;
@@ -163,7 +163,7 @@ header h2 {
     
 }
 #navtext li a {
-    top: 20px;
+    top: 25px;
     color: #fff;
     font-size: 18px;
     text-decoration: none;
@@ -626,7 +626,7 @@ p {
 #start {
     position: absolute;
     margin-left: 30px;
-    margin-top: 50px;
+    margin-top: 20px;
     text-decoration: none;
     padding: 15px 30px;
     font-weight: 600;
@@ -642,3 +642,63 @@ p {
     color: #fff;
     border-color: cyan;
 }
+
+
+/*media query*/
+@media (max-width: 650px){
+    .loginbtn {
+        display: none;
+    }
+    #navtext {
+        right: 10px;
+        top: 30px;
+    }
+    header .searchbox {
+        display: none;
+    }
+    body {
+        
+    }
+}
+
+
+
+@media (max-width: 768px){
+    header .searchbox {
+        display: none;
+    }
+    .loginbtn {
+        display: none;
+    }
+    #navtext {
+        right: 30px;
+        top: 30px;
+    }
+}
+
+@media (max-width: 992px){
+    .brand{
+        left: 90px;
+    }
+    header .searchbox {
+        display: none;
+    }
+    .loginbtn {
+        right: 30px;
+    }
+    
+    #navtext li a {
+        padding: 0px 0px;
+    }
+}
+
+@media (max-width: 1200px){
+    header .searchbox {
+        left: 300px;
+        width: 20%;
+    }
+    header h2 {
+        font-size: 16px;
+    }
+}
+/*
